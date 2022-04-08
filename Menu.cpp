@@ -13,7 +13,7 @@ using namespace std;
 
 int valaszt(){
     int choice;
-    cout<<endl<<"***** TELEFONKONYV *****"<<endl<<endl;
+    cout<<"***** TELEFONKONYV *****"<<endl;
     cout << "1. Kereses"<<endl;
     cout << "2. Adatok felvetele"<<endl;
     cout << "3. Adatok torlese"<<endl;
@@ -57,20 +57,19 @@ void KERES(){
                 break;
 
             default:
-                cout<<"Ilyen opcio nincs, probalja ujra!"<<endl<<endl;
+                cout<<"Ilyen opcio nincs, probalja ujra!"<<endl;
             }
         }
     }
 }
 
 void TOROL(){
-cout<<endl<<"----- ADATOK TORLESE -----"<<endl<<endl;
+cout<<endl<<"----- ADATOK TORLESE -----"<<endl;
     Lista<Szemely> l=FajlbolTorol();
 }
 
-
-
 void ADATFELVET(){
+    cout<<endl<<"----- ADATOK FELVETELE -----"<<endl;
 
     ofstream fajlom;
     fajlom.open("Adat.txt",ios::app);
@@ -197,21 +196,18 @@ void adat_modosit(){
 }
 
 void MODOSIT(){
-    cout<<endl<<"----- ADATOK MODOSITASA -----"<<endl<<endl;
+    cout<<endl<<"----- ADATOK MODOSITASA -----"<<endl;
     Lista<Szemely> l=FajltModosit();
     adat_modosit();
 }
 
 void LISTAZAS(){
-cout<<endl<<"----- ADATOK LISTAZASA -----"<<endl<<endl;
+cout<<endl<<"----- ADATOK LISTAZASA -----"<<endl;
     Lista<Szemely> l=Fajlkezel();
     l.kiir();
 }
 
-
-
 void FOMENU(){
-
     bool vege=false;
     while(vege==false){
     int choice=valaszt();
@@ -232,16 +228,12 @@ void FOMENU(){
                 LISTAZAS();
             break;
             case 6:
-
                 cout<<"Viszlat!";
                 vege=true;
                 break;
 
             default:
-                cout<<"Hibas muveletszam, probalja ujra"<<endl<<endl;
+                cout<<"Hibas muveletszam, probalja ujra"<<endl;
         }
     }
 }
-
-
-

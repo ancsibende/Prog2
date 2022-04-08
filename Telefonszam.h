@@ -1,34 +1,32 @@
-
 #ifndef Telefonszam_h
 #define Telefonszam_h
 
 #include <iostream>
 #include <string>
-using namespace std;
 
 class Telefonszam{ ///Telefonszam osztaly
-    string munkahelyi;
-    string privat;
+    std::string munkahelyi;
+    std::string privat;
 public:
     Telefonszam();
-    string getMTelszam();
-    string getPTelszam();
-    void setMTelszam(string mszam);
-    void setPTelszam(string pszam);
+    std::string getMTelszam();
+    std::string getPTelszam();
+    void setMTelszam(std::string mszam);
+    void setPTelszam(std::string pszam);
 
     void getMind();
-    void setMind(string munkahelyi,string privat);
+    void setMind(std::string munkahelyi,std::string privat);
 
-     friend ostream& operator<<(ostream& os,const Telefonszam& t){
-        os<<t.munkahelyi<<endl<<t.privat<<endl;
+     friend std::ostream& operator<<(std::ostream& os,const Telefonszam& t){
+        os<<t.munkahelyi<<std::endl<<t.privat<<std::endl;
         return os;
     }
 
 
-    friend istream & operator >> (istream &in,  Telefonszam& t) {
-    cout<<endl<<"Adja meg a munkahelyi telefonszamat: ";
+    friend std::istream & operator >> (std::istream &in,  Telefonszam& t) {
+    std::cout<<std::endl<<"Adja meg a munkahelyi telefonszamat: ";
     in>>t.munkahelyi;
-    cout<<endl<<"Adja meg a privat telefonszamat: ";
+    std::cout<<std::endl<<"Adja meg a privat telefonszamat: ";
     in>>t.privat;
 
     return in;

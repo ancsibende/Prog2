@@ -8,7 +8,7 @@
 #include "Szemely.h"
 //#include "cross_platform.h"
 
-using  std::cout;
+using std::cout;
 using std::cin;
 using std::out_of_range;
 using std::endl;

@@ -1,4 +1,5 @@
 #include "Cim.h"
+using namespace std;
 
 Cim::Cim(){
     this->iranyitoszam="1098";
@@ -19,7 +20,7 @@ string Cim::getUtca_Hsz(){
 }
 
 void Cim::setIranyitoszam(string iszam){
-    iranyitoszam=iszam;
+   iranyitoszam=iszam;
 }
 
 void Cim::setTelepules(string t){

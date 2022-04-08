@@ -1,4 +1,5 @@
 #include "Telefonszam.h"
+using namespace std;
 
 Telefonszam::Telefonszam(){
     this->munkahelyi="06303418871";
@@ -22,7 +23,7 @@ void Telefonszam::setPTelszam(string pszam){
 }
 
 void Telefonszam::getMind(){
-    cout << this ->munkahelyi  << " " << endl<< this ->privat<<endl<<endl;
+    cout << this ->munkahelyi  << " " << endl<< this ->privat<<endl;
 }
 
 void Telefonszam::setMind(string munkahelyi,string privat){

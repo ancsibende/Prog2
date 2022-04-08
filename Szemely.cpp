@@ -1,4 +1,5 @@
 #include "Szemely.h"
+using namespace std;
 
 Szemely::Szemely(){
     this->nev= "Simon Karoly";

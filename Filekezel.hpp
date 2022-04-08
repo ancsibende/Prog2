@@ -4,12 +4,7 @@
 #include <fstream>
 #include "iterator.hpp"
 #include "cross_platform.h"
-
-using std::cout;
-using std::endl;
-using std::cin;
-using std::cerr;
-using std::string;
+using namespace std;
 
 void uressor_torlese(const string &fajl){
     ifstream fajlom(fajl);
